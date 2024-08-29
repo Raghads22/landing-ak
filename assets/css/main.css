@@ -1,20 +1,20 @@
-
 @import './base.css';
 
-body{
+body {
     font-family: var(--mainColor);
     background-color: #eee;
 }
 
-.menu{
+.menu {
     display: none;
 }
-.header{
+
+.header {
     background-color: #fff;
     padding: 20px 0;
 }
 
-.header .logo{
+.header .logo {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -22,48 +22,48 @@ body{
 
 }
 
-.header .logo img{
+.header .logo img {
     width: 35px;
 }
 
-.header .logo a{
+.header .logo a {
     color: var(--mainColor);
     font-size: 18px;
 }
 
-.nav ul{
+.navbar ul {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.nav ul li .home{
+.navbar ul li .home {
     font-weight: bold;
 }
 
-.nav ul li a{
+.navbar ul li a {
     color: #101928;
 }
 
-.Authentication{
+.Authentication {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.Authentication a{
+.Authentication a {
     font-family: var(--subFont);
     border-radius: 10px;
     padding: 5.3541765213012695px 30.18113136291504px;
 }
 
-.Authentication .login{
+.Authentication .login {
     border: 2px solid var(--mainColor);
     color: var(--mainColor);
     font-weight: bold;
 }
 
-.Authentication .Register{
+.Authentication .Register {
     color: #fff;
     background-color: var(--mainColor);
     border: 2px solid var(--mainColor);
@@ -71,32 +71,108 @@ body{
 
 
 
-@media screen and (max-width:992px){
-    .nav,
-    .Authentication{
+@media screen and (max-width:992px) {
+
+    .navbar,
+    .Authentication {
         display: none;
     }
 
-    .menu{
+    .menu {
         display: block;
         order: 2;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .container{
+    .container {
         width: calc(100% - 50px);
     }
 
-    .header .logo img{
+    .header .logo img {
         width: 20px;
     }
 
-    .header .logo a{
+    .header .logo a {
         font-size: 13px;
     }
 
-    .fa-solid{
+    .fa-solid {
         font-size: 14px;
     }
+}
+
+.footer{
+    background-color: #393E46;
+    color: #F4F4F4;
+    padding: 50px 0;
+}
+
+.footer a{
+    color: #F4F4F4;
+}
+
+.footer-start{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    width: 550px;
+}
+
+.footer-start .logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3px;
+}
+
+.footer-start .logo img {
+    width: 35px;
+}
+
+.footer-start .icons img{
+    border: 1px solid #F4F4F4 ;
+    padding: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.footer-end{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.footer-end nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-end .footer-item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .footer .row{
+        gap: 30px;
+    }
+
+    .footer-start{
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-end{
+        width: 100%;
+    }
+
 }
