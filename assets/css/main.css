@@ -72,12 +72,31 @@ body{
 
 
 @media screen and (max-width:992px){
-    .nav{
+    .nav,
+    .Authentication{
         display: none;
     }
 
     .menu{
         display: block;
         order: 2;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container{
+        width: calc(100% - 50px);
+    }
+
+    .header .logo img{
+        width: 20px;
+    }
+
+    .header .logo a{
+        font-size: 13px;
+    }
+
+    .fa-solid{
+        font-size: 14px;
     }
 }
